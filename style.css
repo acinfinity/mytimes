@@ -1,20 +1,35 @@
-* {
-  border: 1px solid black;
-}
-
 .header {
   display: flex;
-  width: 1200px;
+  width: 100%;
   height: 80px;
   position: fixed;
   border-bottom: 1px solid black;
   z-index: 1;
   background-color: white;
-  padding-left: 30px;
+  align-items: center;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .logo {
-  flex-grow: 1
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 30px;
+  color: mediumaquamarine;
+}
+
+.header nav {
+  padding-right: 30px;
+}
+
+.header span {
+  padding: 10px;
+}
+
+a {
+  color: black;
 }
 
 .content {
@@ -40,8 +55,34 @@
 }
 
 .footer {
+  display: flex;
   top: 100px;
-  width: 1200px;
-  padding-left: 30px;
+  height: 250px;
+  width: 100%;
   position: relative;
+  flex-direction: column;
+  align-items: center;
+  background-color: MediumAquamarine;
+  font-family: Verdana;
+  font-size: 12px;
+  margin: auto;
+  justify-content: center;
+}
+
+.footer span {
+  margin: 10px;
+}
+
+.footerline1 {
+  display: flex;
+  align-items: center;
+}
+
+.footertitle {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-right: 2px solid white;
+  padding-right: 20px;
 }
